@@ -31,5 +31,10 @@ namespace UsoListas.Classes
                 MessageBox.Show(ex.Message, "Erro de Tipo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public override string ToString()
+        {
+            return Nome;
+        }
     }
 }
