@@ -14,6 +14,7 @@ namespace UsoListas
     public partial class frmInicio : Form
     {
         private List<Pessoa> listaPessoas = new List<Pessoa>();
+        private Pessoa pessoaSelecionada;
 
         public frmInicio()
         {
@@ -35,10 +36,10 @@ namespace UsoListas
             lstbContatos.Items.AddRange(listaPessoas.ToArray());
         }
 
-        private void AtualizaListaTelefones(Pessoa pessoa)
+        private void AtualizaListaTelefones()
         {
             lstbTelefones.Items.Clear();
-            lstbTelefones.Items.AddRange(pessoa.Telefones.ToArray());
+            lstbTelefones.Items.AddRange(pessoaSelecionada.Telefones.ToArray());
         }
 
         private void lstbContatos_SelectedIndexChanged(object sender, EventArgs e)
@@ -46,12 +47,12 @@ namespace UsoListas
             // Caso tenha algum item selecionado
             if (lstbContatos.SelectedItems != null)
             {
-                Pessoa pessoaSelecionada = (Pessoa)lstbContatos.SelectedItem;
+                pessoaSelecionada = (Pessoa)lstbContatos.SelectedItem;
 
                 MostraOcultaDetalhesContato(true);
                 lblNomeContato.Text = pessoaSelecionada.Nome;
                 lblEnderecoContato.Text = pessoaSelecionada.Endereco;
-                AtualizaListaTelefones(pessoaSelecionada);
+                AtualizaListaTelefones();
             } 
             else
             {
@@ -118,6 +119,19 @@ namespace UsoListas
             if (e.KeyChar == (char)Keys.Enter)
             {
                 SalvarContato();
+            }
+        }
+
+        private void btnAdicionarTelefone_Click(object sender, EventArgs e)
+        {
+            frmNovoTelefone novoTelefone = new frmNovoTelefone();
+            DialogResult resposta = novoTelefone.ShowDialog();
+
+            if (resposta == DialogResult.OK)
+            {
+                // Armazenar o telefone na pessoa selecionada;
+                pessoaSelecionada.AdicionarTelefone(novoTelefone.Ddd, novoTelefone.Numero, novoTelefone.Tipo);
+                AtualizaListaTelefones();
             }
         }
     }

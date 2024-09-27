@@ -172,6 +172,7 @@
             this.btnAdicionarTelefone.Text = "Novo Telefone";
             this.btnAdicionarTelefone.UseVisualStyleBackColor = false;
             this.btnAdicionarTelefone.Visible = false;
+            this.btnAdicionarTelefone.Click += new System.EventHandler(this.btnAdicionarTelefone_Click);
             // 
             // btnApagarPessoa
             // 
