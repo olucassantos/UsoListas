@@ -56,9 +56,11 @@
             this.grbListaContatos.BackColor = System.Drawing.Color.Khaki;
             this.grbListaContatos.Controls.Add(this.lstbContatos);
             this.grbListaContatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbListaContatos.Location = new System.Drawing.Point(429, 12);
+            this.grbListaContatos.Location = new System.Drawing.Point(312, 8);
+            this.grbListaContatos.Margin = new System.Windows.Forms.Padding(2);
             this.grbListaContatos.Name = "grbListaContatos";
-            this.grbListaContatos.Size = new System.Drawing.Size(482, 540);
+            this.grbListaContatos.Padding = new System.Windows.Forms.Padding(2);
+            this.grbListaContatos.Size = new System.Drawing.Size(351, 360);
             this.grbListaContatos.TabIndex = 0;
             this.grbListaContatos.TabStop = false;
             this.grbListaContatos.Text = "Lista de Contatos";
@@ -66,12 +68,14 @@
             // lstbContatos
             // 
             this.lstbContatos.FormattingEnabled = true;
-            this.lstbContatos.ItemHeight = 24;
-            this.lstbContatos.Location = new System.Drawing.Point(6, 26);
+            this.lstbContatos.ItemHeight = 17;
+            this.lstbContatos.Location = new System.Drawing.Point(4, 17);
+            this.lstbContatos.Margin = new System.Windows.Forms.Padding(2);
             this.lstbContatos.Name = "lstbContatos";
-            this.lstbContatos.Size = new System.Drawing.Size(470, 508);
+            this.lstbContatos.Size = new System.Drawing.Size(343, 327);
             this.lstbContatos.TabIndex = 5;
             this.lstbContatos.SelectedIndexChanged += new System.EventHandler(this.lstbContatos_SelectedIndexChanged);
+            this.lstbContatos.DoubleClick += new System.EventHandler(this.lstbContatos_DoubleClick);
             // 
             // grbCadastrar
             // 
@@ -83,18 +87,21 @@
             this.grbCadastrar.Controls.Add(this.txtEndereco);
             this.grbCadastrar.Controls.Add(this.txtNome);
             this.grbCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbCadastrar.Location = new System.Drawing.Point(12, 12);
+            this.grbCadastrar.Location = new System.Drawing.Point(9, 8);
+            this.grbCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.grbCadastrar.Name = "grbCadastrar";
-            this.grbCadastrar.Size = new System.Drawing.Size(411, 221);
+            this.grbCadastrar.Padding = new System.Windows.Forms.Padding(2);
+            this.grbCadastrar.Size = new System.Drawing.Size(299, 147);
             this.grbCadastrar.TabIndex = 0;
             this.grbCadastrar.TabStop = false;
             this.grbCadastrar.Text = "Cadastrar Pessoa";
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(210, 169);
+            this.btnSalvar.Location = new System.Drawing.Point(153, 113);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(87, 46);
+            this.btnSalvar.Size = new System.Drawing.Size(63, 31);
             this.btnSalvar.TabIndex = 3;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -102,9 +109,10 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(303, 169);
+            this.btnLimpar.Location = new System.Drawing.Point(220, 113);
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(102, 46);
+            this.btnLimpar.Size = new System.Drawing.Size(74, 31);
             this.btnLimpar.TabIndex = 4;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
@@ -112,34 +120,38 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1, 98);
+            this.label2.Location = new System.Drawing.Point(1, 65);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 25);
+            this.label2.Size = new System.Drawing.Size(77, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Endereço";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1, 30);
+            this.label1.Location = new System.Drawing.Point(1, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 25);
+            this.label1.Size = new System.Drawing.Size(49, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nome";
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(6, 126);
+            this.txtEndereco.Location = new System.Drawing.Point(4, 84);
+            this.txtEndereco.Margin = new System.Windows.Forms.Padding(2);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(399, 29);
+            this.txtEndereco.Size = new System.Drawing.Size(291, 23);
             this.txtEndereco.TabIndex = 2;
             this.txtEndereco.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEndereco_KeyPress);
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(6, 58);
+            this.txtNome.Location = new System.Drawing.Point(4, 39);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(2);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(399, 29);
+            this.txtNome.Size = new System.Drawing.Size(291, 23);
             this.txtNome.TabIndex = 1;
             this.txtNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
@@ -155,9 +167,11 @@
             this.grbDadosPessoa.Controls.Add(this.label3);
             this.grbDadosPessoa.Controls.Add(this.lstbTelefones);
             this.grbDadosPessoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbDadosPessoa.Location = new System.Drawing.Point(12, 239);
+            this.grbDadosPessoa.Location = new System.Drawing.Point(9, 159);
+            this.grbDadosPessoa.Margin = new System.Windows.Forms.Padding(2);
             this.grbDadosPessoa.Name = "grbDadosPessoa";
-            this.grbDadosPessoa.Size = new System.Drawing.Size(411, 313);
+            this.grbDadosPessoa.Padding = new System.Windows.Forms.Padding(2);
+            this.grbDadosPessoa.Size = new System.Drawing.Size(299, 209);
             this.grbDadosPessoa.TabIndex = 2;
             this.grbDadosPessoa.TabStop = false;
             this.grbDadosPessoa.Text = "Dados da Pessoa";
@@ -165,9 +179,10 @@
             // btnAdicionarTelefone
             // 
             this.btnAdicionarTelefone.BackColor = System.Drawing.Color.Yellow;
-            this.btnAdicionarTelefone.Location = new System.Drawing.Point(6, 271);
+            this.btnAdicionarTelefone.Location = new System.Drawing.Point(4, 181);
+            this.btnAdicionarTelefone.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdicionarTelefone.Name = "btnAdicionarTelefone";
-            this.btnAdicionarTelefone.Size = new System.Drawing.Size(167, 36);
+            this.btnAdicionarTelefone.Size = new System.Drawing.Size(121, 24);
             this.btnAdicionarTelefone.TabIndex = 6;
             this.btnAdicionarTelefone.Text = "Novo Telefone";
             this.btnAdicionarTelefone.UseVisualStyleBackColor = false;
@@ -177,9 +192,10 @@
             // btnApagarPessoa
             // 
             this.btnApagarPessoa.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnApagarPessoa.Location = new System.Drawing.Point(316, 271);
+            this.btnApagarPessoa.Location = new System.Drawing.Point(230, 181);
+            this.btnApagarPessoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnApagarPessoa.Name = "btnApagarPessoa";
-            this.btnApagarPessoa.Size = new System.Drawing.Size(89, 36);
+            this.btnApagarPessoa.Size = new System.Drawing.Size(65, 24);
             this.btnApagarPessoa.TabIndex = 8;
             this.btnApagarPessoa.Text = "Editar";
             this.btnApagarPessoa.UseVisualStyleBackColor = false;
@@ -188,9 +204,10 @@
             // btnEditarPessoa
             // 
             this.btnEditarPessoa.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnEditarPessoa.Location = new System.Drawing.Point(179, 271);
+            this.btnEditarPessoa.Location = new System.Drawing.Point(130, 181);
+            this.btnEditarPessoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditarPessoa.Name = "btnEditarPessoa";
-            this.btnEditarPessoa.Size = new System.Drawing.Size(131, 36);
+            this.btnEditarPessoa.Size = new System.Drawing.Size(95, 24);
             this.btnEditarPessoa.TabIndex = 7;
             this.btnEditarPessoa.Text = "Apagar";
             this.btnEditarPessoa.UseVisualStyleBackColor = false;
@@ -199,9 +216,10 @@
             // lblEnderecoContato
             // 
             this.lblEnderecoContato.AutoSize = true;
-            this.lblEnderecoContato.Location = new System.Drawing.Point(129, 65);
+            this.lblEnderecoContato.Location = new System.Drawing.Point(94, 43);
+            this.lblEnderecoContato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEnderecoContato.Name = "lblEnderecoContato";
-            this.lblEnderecoContato.Size = new System.Drawing.Size(70, 25);
+            this.lblEnderecoContato.Size = new System.Drawing.Size(52, 17);
             this.lblEnderecoContato.TabIndex = 2;
             this.lblEnderecoContato.Text = "label5";
             this.lblEnderecoContato.Visible = false;
@@ -209,9 +227,10 @@
             // lblNomeContato
             // 
             this.lblNomeContato.AutoSize = true;
-            this.lblNomeContato.Location = new System.Drawing.Point(87, 37);
+            this.lblNomeContato.Location = new System.Drawing.Point(63, 25);
+            this.lblNomeContato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNomeContato.Name = "lblNomeContato";
-            this.lblNomeContato.Size = new System.Drawing.Size(70, 25);
+            this.lblNomeContato.Size = new System.Drawing.Size(52, 17);
             this.lblNomeContato.TabIndex = 2;
             this.lblNomeContato.Text = "label5";
             this.lblNomeContato.Visible = false;
@@ -219,43 +238,49 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 62);
+            this.label4.Location = new System.Drawing.Point(4, 41);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 25);
+            this.label4.Size = new System.Drawing.Size(87, 17);
             this.label4.TabIndex = 1;
             this.label4.Text = "Endereço: ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 34);
+            this.label3.Location = new System.Drawing.Point(4, 23);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 25);
+            this.label3.Size = new System.Drawing.Size(54, 17);
             this.label3.TabIndex = 1;
             this.label3.Text = "Nome:";
             // 
             // lstbTelefones
             // 
             this.lstbTelefones.FormattingEnabled = true;
-            this.lstbTelefones.ItemHeight = 24;
-            this.lstbTelefones.Location = new System.Drawing.Point(6, 104);
+            this.lstbTelefones.ItemHeight = 17;
+            this.lstbTelefones.Location = new System.Drawing.Point(4, 69);
+            this.lstbTelefones.Margin = new System.Windows.Forms.Padding(2);
             this.lstbTelefones.Name = "lstbTelefones";
-            this.lstbTelefones.Size = new System.Drawing.Size(399, 148);
+            this.lstbTelefones.Size = new System.Drawing.Size(291, 89);
             this.lstbTelefones.TabIndex = 0;
             this.lstbTelefones.Visible = false;
             // 
             // frmInicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
-            this.ClientSize = new System.Drawing.Size(923, 564);
+            this.ClientSize = new System.Drawing.Size(671, 376);
             this.Controls.Add(this.grbDadosPessoa);
             this.Controls.Add(this.grbCadastrar);
             this.Controls.Add(this.grbListaContatos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmInicio";
             this.Text = "Agenda InovTec";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmInicio_FormClosing);
+            this.Load += new System.EventHandler(this.frmInicio_Load);
             this.grbListaContatos.ResumeLayout(false);
             this.grbCadastrar.ResumeLayout(false);
             this.grbCadastrar.PerformLayout();

@@ -45,7 +45,7 @@ namespace UsoListas
         private void lstbContatos_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Caso tenha algum item selecionado
-            if (lstbContatos.SelectedItems != null)
+            if (lstbContatos.SelectedItem != null)
             {
                 pessoaSelecionada = (Pessoa)lstbContatos.SelectedItem;
 
@@ -131,8 +131,25 @@ namespace UsoListas
             {
                 // Armazenar o telefone na pessoa selecionada;
                 pessoaSelecionada.AdicionarTelefone(novoTelefone.Ddd, novoTelefone.Numero, novoTelefone.Tipo);
+                MessageBox.Show("Telefone salvo com sucesso!");
                 AtualizaListaTelefones();
             }
+        }
+
+        private void frmInicio_Load(object sender, EventArgs e)
+        {
+            listaPessoas = ArquivosJson.ImportarPessoasJson();
+            AtualizaListaContatos();
+        }
+
+        private void frmInicio_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            ArquivosJson.ExportarPessoasParaJson(listaPessoas);
+        }
+
+        private void lstbContatos_DoubleClick(object sender, EventArgs e)
+        {
+            lstbContatos.SelectedItem = null;
         }
     }
 }
