@@ -151,5 +151,27 @@ namespace UsoListas
         {
             lstbContatos.SelectedItem = null;
         }
+
+        private void btnApagarPessoa_Click(object sender, EventArgs e)
+        {
+            //listaPessoas.Remove();
+        }
+
+        private void btnEditarPessoa_Click(object sender, EventArgs e)
+        {
+            FrmEditarPessoa formularioEdita = new FrmEditarPessoa(pessoaSelecionada.Nome, pessoaSelecionada.Endereco);
+            DialogResult resultado = formularioEdita.ShowDialog();
+
+            // A pessoa clicou em salvar
+            if (resultado == DialogResult.OK)
+            {
+                pessoaSelecionada.Nome = formularioEdita.Nome;
+                pessoaSelecionada.Endereco = formularioEdita.Endereco;
+
+                AtualizaListaContatos();
+                lblNomeContato.Text = pessoaSelecionada.Nome;
+                lblEnderecoContato.Text = pessoaSelecionada.Endereco;
+            }
+        }
     }
 }

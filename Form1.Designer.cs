@@ -191,27 +191,29 @@
             // 
             // btnApagarPessoa
             // 
-            this.btnApagarPessoa.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnApagarPessoa.BackColor = System.Drawing.Color.OrangeRed;
             this.btnApagarPessoa.Location = new System.Drawing.Point(230, 181);
             this.btnApagarPessoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnApagarPessoa.Name = "btnApagarPessoa";
             this.btnApagarPessoa.Size = new System.Drawing.Size(65, 24);
             this.btnApagarPessoa.TabIndex = 8;
-            this.btnApagarPessoa.Text = "Editar";
+            this.btnApagarPessoa.Text = "Apagar";
             this.btnApagarPessoa.UseVisualStyleBackColor = false;
             this.btnApagarPessoa.Visible = false;
+            this.btnApagarPessoa.Click += new System.EventHandler(this.btnApagarPessoa_Click);
             // 
             // btnEditarPessoa
             // 
-            this.btnEditarPessoa.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnEditarPessoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnEditarPessoa.Location = new System.Drawing.Point(130, 181);
             this.btnEditarPessoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditarPessoa.Name = "btnEditarPessoa";
             this.btnEditarPessoa.Size = new System.Drawing.Size(95, 24);
             this.btnEditarPessoa.TabIndex = 7;
-            this.btnEditarPessoa.Text = "Apagar";
+            this.btnEditarPessoa.Text = "Editar";
             this.btnEditarPessoa.UseVisualStyleBackColor = false;
             this.btnEditarPessoa.Visible = false;
+            this.btnEditarPessoa.Click += new System.EventHandler(this.btnEditarPessoa_Click);
             // 
             // lblEnderecoContato
             // 
@@ -278,6 +280,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmInicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agenda InovTec";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmInicio_FormClosing);
             this.Load += new System.EventHandler(this.frmInicio_Load);
