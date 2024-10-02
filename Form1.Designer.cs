@@ -53,32 +53,39 @@
             // 
             // grbListaContatos
             // 
+            this.grbListaContatos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grbListaContatos.BackColor = System.Drawing.Color.Khaki;
             this.grbListaContatos.Controls.Add(this.lstbContatos);
             this.grbListaContatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbListaContatos.Location = new System.Drawing.Point(312, 8);
+            this.grbListaContatos.Location = new System.Drawing.Point(620, 11);
             this.grbListaContatos.Margin = new System.Windows.Forms.Padding(2);
             this.grbListaContatos.Name = "grbListaContatos";
             this.grbListaContatos.Padding = new System.Windows.Forms.Padding(2);
-            this.grbListaContatos.Size = new System.Drawing.Size(351, 360);
+            this.grbListaContatos.Size = new System.Drawing.Size(511, 631);
             this.grbListaContatos.TabIndex = 0;
             this.grbListaContatos.TabStop = false;
             this.grbListaContatos.Text = "Lista de Contatos";
             // 
             // lstbContatos
             // 
+            this.lstbContatos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lstbContatos.FormattingEnabled = true;
             this.lstbContatos.ItemHeight = 17;
-            this.lstbContatos.Location = new System.Drawing.Point(4, 17);
+            this.lstbContatos.Location = new System.Drawing.Point(4, 20);
             this.lstbContatos.Margin = new System.Windows.Forms.Padding(2);
             this.lstbContatos.Name = "lstbContatos";
-            this.lstbContatos.Size = new System.Drawing.Size(343, 327);
+            this.lstbContatos.Size = new System.Drawing.Size(503, 599);
             this.lstbContatos.TabIndex = 5;
             this.lstbContatos.SelectedIndexChanged += new System.EventHandler(this.lstbContatos_SelectedIndexChanged);
             this.lstbContatos.DoubleClick += new System.EventHandler(this.lstbContatos_DoubleClick);
             // 
             // grbCadastrar
             // 
+            this.grbCadastrar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grbCadastrar.BackColor = System.Drawing.Color.Gold;
             this.grbCadastrar.Controls.Add(this.btnSalvar);
             this.grbCadastrar.Controls.Add(this.btnLimpar);
@@ -91,17 +98,18 @@
             this.grbCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.grbCadastrar.Name = "grbCadastrar";
             this.grbCadastrar.Padding = new System.Windows.Forms.Padding(2);
-            this.grbCadastrar.Size = new System.Drawing.Size(299, 147);
+            this.grbCadastrar.Size = new System.Drawing.Size(607, 147);
             this.grbCadastrar.TabIndex = 0;
             this.grbCadastrar.TabStop = false;
             this.grbCadastrar.Text = "Cadastrar Pessoa";
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(153, 113);
+            this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalvar.Location = new System.Drawing.Point(449, 113);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(63, 31);
+            this.btnSalvar.Size = new System.Drawing.Size(76, 31);
             this.btnSalvar.TabIndex = 3;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -109,7 +117,8 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(220, 113);
+            this.btnLimpar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLimpar.Location = new System.Drawing.Point(529, 113);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(74, 31);
@@ -139,24 +148,31 @@
             // 
             // txtEndereco
             // 
+            this.txtEndereco.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEndereco.Location = new System.Drawing.Point(4, 84);
             this.txtEndereco.Margin = new System.Windows.Forms.Padding(2);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(291, 23);
+            this.txtEndereco.Size = new System.Drawing.Size(599, 23);
             this.txtEndereco.TabIndex = 2;
             this.txtEndereco.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEndereco_KeyPress);
             // 
             // txtNome
             // 
+            this.txtNome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNome.Location = new System.Drawing.Point(4, 39);
             this.txtNome.Margin = new System.Windows.Forms.Padding(2);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(291, 23);
+            this.txtNome.Size = new System.Drawing.Size(599, 23);
             this.txtNome.TabIndex = 1;
             this.txtNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // grbDadosPessoa
             // 
+            this.grbDadosPessoa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grbDadosPessoa.BackColor = System.Drawing.Color.Goldenrod;
             this.grbDadosPessoa.Controls.Add(this.btnAdicionarTelefone);
             this.grbDadosPessoa.Controls.Add(this.btnApagarPessoa);
@@ -171,18 +187,19 @@
             this.grbDadosPessoa.Margin = new System.Windows.Forms.Padding(2);
             this.grbDadosPessoa.Name = "grbDadosPessoa";
             this.grbDadosPessoa.Padding = new System.Windows.Forms.Padding(2);
-            this.grbDadosPessoa.Size = new System.Drawing.Size(299, 209);
+            this.grbDadosPessoa.Size = new System.Drawing.Size(607, 481);
             this.grbDadosPessoa.TabIndex = 2;
             this.grbDadosPessoa.TabStop = false;
             this.grbDadosPessoa.Text = "Dados da Pessoa";
             // 
             // btnAdicionarTelefone
             // 
+            this.btnAdicionarTelefone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdicionarTelefone.BackColor = System.Drawing.Color.Yellow;
-            this.btnAdicionarTelefone.Location = new System.Drawing.Point(4, 181);
+            this.btnAdicionarTelefone.Location = new System.Drawing.Point(268, 412);
             this.btnAdicionarTelefone.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdicionarTelefone.Name = "btnAdicionarTelefone";
-            this.btnAdicionarTelefone.Size = new System.Drawing.Size(121, 24);
+            this.btnAdicionarTelefone.Size = new System.Drawing.Size(131, 63);
             this.btnAdicionarTelefone.TabIndex = 6;
             this.btnAdicionarTelefone.Text = "Novo Telefone";
             this.btnAdicionarTelefone.UseVisualStyleBackColor = false;
@@ -191,11 +208,12 @@
             // 
             // btnApagarPessoa
             // 
+            this.btnApagarPessoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnApagarPessoa.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnApagarPessoa.Location = new System.Drawing.Point(230, 181);
+            this.btnApagarPessoa.Location = new System.Drawing.Point(518, 412);
             this.btnApagarPessoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnApagarPessoa.Name = "btnApagarPessoa";
-            this.btnApagarPessoa.Size = new System.Drawing.Size(65, 24);
+            this.btnApagarPessoa.Size = new System.Drawing.Size(85, 63);
             this.btnApagarPessoa.TabIndex = 8;
             this.btnApagarPessoa.Text = "Apagar";
             this.btnApagarPessoa.UseVisualStyleBackColor = false;
@@ -204,11 +222,12 @@
             // 
             // btnEditarPessoa
             // 
+            this.btnEditarPessoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditarPessoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnEditarPessoa.Location = new System.Drawing.Point(130, 181);
+            this.btnEditarPessoa.Location = new System.Drawing.Point(406, 412);
             this.btnEditarPessoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditarPessoa.Name = "btnEditarPessoa";
-            this.btnEditarPessoa.Size = new System.Drawing.Size(95, 24);
+            this.btnEditarPessoa.Size = new System.Drawing.Size(105, 63);
             this.btnEditarPessoa.TabIndex = 7;
             this.btnEditarPessoa.Text = "Editar";
             this.btnEditarPessoa.UseVisualStyleBackColor = false;
@@ -259,12 +278,15 @@
             // 
             // lstbTelefones
             // 
+            this.lstbTelefones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lstbTelefones.FormattingEnabled = true;
             this.lstbTelefones.ItemHeight = 17;
             this.lstbTelefones.Location = new System.Drawing.Point(4, 69);
             this.lstbTelefones.Margin = new System.Windows.Forms.Padding(2);
             this.lstbTelefones.Name = "lstbTelefones";
-            this.lstbTelefones.Size = new System.Drawing.Size(291, 89);
+            this.lstbTelefones.Size = new System.Drawing.Size(599, 327);
             this.lstbTelefones.TabIndex = 0;
             this.lstbTelefones.Visible = false;
             // 
@@ -273,7 +295,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
-            this.ClientSize = new System.Drawing.Size(671, 376);
+            this.ClientSize = new System.Drawing.Size(1142, 653);
             this.Controls.Add(this.grbDadosPessoa);
             this.Controls.Add(this.grbCadastrar);
             this.Controls.Add(this.grbListaContatos);

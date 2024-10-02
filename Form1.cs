@@ -154,7 +154,23 @@ namespace UsoListas
 
         private void btnApagarPessoa_Click(object sender, EventArgs e)
         {
-            //listaPessoas.Remove();
+            // Mostra uma caixa de confirmação para o usuário
+            DialogResult resultado = MessageBox.Show(
+                $"Deseja realmente apagar o contato {pessoaSelecionada.Nome}?",
+                "Confirmação",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning,
+                MessageBoxDefaultButton.Button2
+            );
+
+            if (resultado == DialogResult.Yes)
+            {
+                // Remove a pessoa selecionada da lista
+                listaPessoas.Remove(pessoaSelecionada);
+                AtualizaListaContatos();
+                MostraOcultaDetalhesContato(false);
+                pessoaSelecionada = null; // Limpa a variavel de pessoa selecionada
+            }
         }
 
         private void btnEditarPessoa_Click(object sender, EventArgs e)
